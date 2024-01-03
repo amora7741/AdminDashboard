@@ -6,10 +6,38 @@
     --rounded-corners: 5px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
 
 .container { 
-    
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidebar {
+    background-color: var(--sidebar-color);
+    display: flex;
+    gap: 50px;
+    color: white;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    padding: 15px;
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    filter: invert(100%);
 }
