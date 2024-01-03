@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --sidebar-color: #0ea5e9;
+    --sidebar-color: #0e95e9;
     --yellow-contrast: #fbbf24;
     --rounded-corners: 5px;
 }
@@ -23,16 +23,16 @@ body{
 .sidebar {
     background-color: var(--sidebar-color);
     display: flex;
-    gap: 30px;
+    gap: 35px;
     color: white;
     flex-direction: column;
+    padding: 15px;
 }
 
 .title {
     font-weight: bold;
     font-size: 1.5rem;
     display: flex;
-    padding: 15px;
 }
 
 .logo {
@@ -46,5 +46,16 @@ ul img {
     width: 20px;
     height: auto;
     filter: invert(100%);
-    margin: 0 15px;
+    margin-right: 10px;
+}
+
+ul li {
+    padding: 5px;
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
