@@ -2,10 +2,10 @@
 
 :root {
     --sidebar-color: #0e95e9;
-    --yellow-contrast: #fbbf24;
+    --contrast: #77c6f0;
     --rounded-corners: 5px;
     --article-background: #e5e7eb;
-    --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 * {
@@ -72,7 +72,8 @@ ul li {
 
 .header {
     display: grid;
-    box-shadow: var(--card-shadow);
+    position: relative;
+    box-shadow: var(--shadow);
     grid-template-rows: 1fr 1fr;
     grid-row: 1 / 2;
     padding: 10px;
@@ -84,16 +85,19 @@ ul li {
     gap: 50px;
 }
 
-.topleft {
-    display: flex;
+.topleft, .topright {
     padding: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.topleft {
     margin-left: 30px;
 }
 
-.topleft img {
+.top img {
     width: 30px;
     height: auto;
-    margin-right: 10px;
 }
 
 .search {
@@ -121,9 +125,9 @@ ul li {
 .card {
     background-color: white;
     height: 250px;
-    border-left: 10px solid var(--yellow-contrast);
+    border-left: 10px solid var(--contrast);
     border-radius: var(--rounded-corners);
-    box-shadow: var(--card-shadow)
+    box-shadow: var(--shadow)
 }
 
 .leftarticle {
