@@ -88,16 +88,29 @@ ul li {
 .topleft, .topright {
     padding: 10px;
     display: flex;
-    gap: 15px;
+    align-items: center;
 }
 
 .topleft {
+    grid-column: 1 / 2;
     margin-left: 30px;
+    gap: 15px;
 }
 
-.top img {
+.topright {
+    grid-column: 2 / 3;
+    gap: 30px;
+}
+
+.headericon {
     width: 30px;
     height: auto;
+}
+
+.profile {
+    width: 50px;
+    height: auto;
+    border-radius: 100%;
 }
 
 .search {
