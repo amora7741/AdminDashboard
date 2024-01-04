@@ -79,25 +79,25 @@ ul li {
     padding: 10px;
 }
 
-.top {
+.top, .bottom {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 50px;
 }
 
-.topleft, .topright {
+.topleft, .topright, .bottomleft, .bottomright {
     padding: 10px;
     display: flex;
     align-items: center;
 }
 
-.topleft {
+.topleft, .bottomleft {
     grid-column: 1 / 2;
     margin-left: 30px;
-    gap: 15px;
+    gap: 30px;
 }
 
-.topright {
+.topright, .bottomright {
     grid-column: 2 / 3;
     gap: 30px;
 }
@@ -108,9 +108,22 @@ ul li {
 }
 
 .profile {
-    width: 70px;
     height: auto;
     border-radius: 100%;
+}
+
+.littleprofile {
+    width: 50px;
+}
+
+.bigprofile {
+    width: 70px;
+}
+
+.hithere {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .search {
