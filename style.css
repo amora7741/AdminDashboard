@@ -121,11 +121,13 @@ ul li {
 .headericon {
     width: 30px;
     height: auto;
+    cursor: pointer;
 }
 
 .profile {
     height: auto;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 .littleprofile {
@@ -177,8 +179,12 @@ ul li {
     flex-direction: column;
 }
 
-.leftarticle h2, .rightarticle h2 {
+.leftarticle h2 {
     padding: 30px 0px 10px 30px;
+}
+
+.rightarticle h2 {
+    padding: 30px 0px 10px 0px;
 }
 
 .rightarticle {
