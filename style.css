@@ -102,6 +102,20 @@ ul li {
     gap: 30px;
 }
 
+.bottomright button {
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    color: white;
+    background-color: var(--sidebar-color);
+}
+
+.bottomright {
+    justify-content: center;
+    margin-left: -50px;
+}
+
 .headericon {
     width: 30px;
     height: auto;
