@@ -171,7 +171,11 @@ ul li {
     height: 250px;
     border-left: 10px solid var(--contrast);
     border-radius: var(--rounded-corners);
-    box-shadow: var(--shadow)
+    box-shadow: var(--shadow);
+}
+
+.leftcardinfo {
+    padding: 50px;
 }
 
 .leftarticle, .rightarticle {
