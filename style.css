@@ -172,10 +172,26 @@ ul li {
     border-left: 10px solid var(--contrast);
     border-radius: var(--rounded-corners);
     box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardicon {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    padding: 30px;
 }
 
 .leftcardinfo {
-    padding: 50px;
+    padding: 30px;
 }
 
 .leftarticle, .rightarticle {
